@@ -1,4 +1,4 @@
-package controller;
+package at.fhtw.bic.markingapifhtw.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -18,6 +18,6 @@ public class MarketingApifhtwController {
             return 4;
         else if (percentage<50 && percentage>=0)
             return 5;
-        else return 0;
+        else return 0; //im Fall von falscher Eingabe
     }
 }
